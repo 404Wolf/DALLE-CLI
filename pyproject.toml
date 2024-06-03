@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dallecli"
+version = "0.1.0"
+description = "CLI Utility for OpenAI DALLE AI image generation"
+authors = ["Wolf Mermelstein <wolfmermelstein@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "2.31.0"
+click = "8.1.3"
+openai = "1.6.1"
+rich = "13.4.2"
+pillow = "10.0.1"
+
+[tool.poetry.scripts]
+dallecli = "dallecli.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
